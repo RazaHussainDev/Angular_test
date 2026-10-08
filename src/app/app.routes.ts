@@ -5,6 +5,7 @@ import { NewArrivals } from './pages/new-arrivals/new-arrivals';
 import { Men } from './pages/men/men';
 import { Women } from './pages/women/women';
 import { Accessories } from './pages/accessories/accessories';
+import { Cart } from './pages/cart/cart';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,9 @@ export const routes: Routes = [
     {
         path:"Accessories",
         component:Accessories
+    },
+    {
+        path:"Cart",
+        component:Cart
     }
 ];
