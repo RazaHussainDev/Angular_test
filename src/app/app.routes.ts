@@ -4,6 +4,7 @@ import { Store } from './pages/store/store';
 import { NewArrivals } from './pages/new-arrivals/new-arrivals';
 import { Men } from './pages/men/men';
 import { Women } from './pages/women/women';
+import { Accessories } from './pages/accessories/accessories';
 
 export const routes: Routes = [
     {
@@ -28,6 +29,6 @@ export const routes: Routes = [
     },
     {
         path:"Accessories",
-        component:Women
+        component:Accessories
     }
 ];

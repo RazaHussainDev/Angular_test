@@ -1,0 +1,484 @@
+.accessories-page {
+background: #fff;
+color: #111;
+font-family: "Poppins", sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.accessories-hero {
+min-height: 720px;
+padding: 80px 8%;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+
+background:
+linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.18)),
+url("https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=2000&q=85")
+center/cover no-repeat;
+
+color: #fff;
+}
+
+.accessories-hero-content {
+max-width: 650px;
+animation: accessoriesFadeUp 1s ease forwards;
+}
+
+.accessories-eyebrow {
+display: block;
+font-size: 11px;
+letter-spacing: 3px;
+font-weight: 600;
+margin-bottom: 22px;
+opacity: .72;
+}
+
+.accessories-hero h1 {
+font-size: clamp(60px, 8vw, 110px);
+line-height: .9;
+letter-spacing: -5px;
+font-weight: 500;
+margin: 0 0 30px;
+}
+
+.accessories-hero h1 em {
+font-weight: 300;
+}
+
+.accessories-hero p {
+max-width: 450px;
+color: #ddd;
+font-size: 16px;
+line-height: 1.8;
+margin-bottom: 35px;
+}
+
+.accessories-btn {
+display: inline-flex;
+align-items: center;
+gap: 30px;
+padding: 16px 23px;
+background: #fff;
+color: #111;
+text-decoration: none;
+font-size: 13px;
+font-weight: 600;
+transition: .35s ease;
+}
+
+.accessories-btn span {
+font-size: 18px;
+transition: .35s ease;
+}
+
+.accessories-btn:hover {
+background: #111;
+color: #fff;
+}
+
+.accessories-btn:hover span {
+transform: translateX(7px);
+}
+
+/* ================= INTRO ================= */
+
+.accessories-intro {
+max-width: 760px;
+padding: 130px 25px 110px;
+margin: auto;
+text-align: center;
+}
+
+.accessories-intro .accessories-eyebrow {
+color: #777;
+}
+
+.accessories-intro h2 {
+margin: 0 0 30px;
+font-size: clamp(44px, 6vw, 78px);
+line-height: .95;
+letter-spacing: -4px;
+font-weight: 500;
+}
+
+.accessories-intro p {
+max-width: 550px;
+margin: auto;
+color: #777;
+line-height: 1.9;
+}
+
+/* ================= CATEGORIES ================= */
+
+.accessories-categories {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 14px;
+padding: 0 5%;
+}
+
+.accessory-category {
+height: 570px;
+position: relative;
+overflow: hidden;
+color: #fff;
+text-decoration: none;
+}
+
+.accessory-category-image {
+position: absolute;
+inset: 0;
+background-size: cover;
+background-position: center;
+transition: transform .7s cubic-bezier(.2,.7,.2,1);
+}
+
+.accessory-cat-one {
+background-image:
+linear-gradient(0deg, rgba(0,0,0,.75), transparent 60%),
+url("https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=85");
+}
+
+.accessory-cat-two {
+background-image:
+linear-gradient(0deg, rgba(0,0,0,.75), transparent 60%),
+url("https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=85");
+}
+
+.accessory-cat-three {
+background-image:
+linear-gradient(0deg, rgba(0,0,0,.75), transparent 60%),
+url("https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1000&q=85");
+}
+
+.accessory-category:hover .accessory-category-image {
+transform: scale(1.07);
+}
+
+.accessory-category-info {
+position: absolute;
+left: 30px;
+right: 30px;
+bottom: 30px;
+}
+
+.accessory-category-info span {
+font-size: 11px;
+opacity: .7;
+}
+
+.accessory-category-info h3 {
+margin: 7px 0 18px;
+font-size: 31px;
+font-weight: 500;
+}
+
+.accessory-category-info b {
+font-size: 11px;
+letter-spacing: 1px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.accessories-products {
+padding: 140px 5%;
+}
+
+.accessories-heading {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+margin-bottom: 50px;
+}
+
+.accessories-heading .accessories-eyebrow {
+color: #888;
+margin-bottom: 10px;
+}
+
+.accessories-heading h2 {
+margin: 0;
+font-size: 45px;
+letter-spacing: -2px;
+font-weight: 500;
+}
+
+.accessories-heading > a {
+color: #111;
+text-decoration: none;
+font-size: 13px;
+border-bottom: 1px solid #111;
+padding-bottom: 5px;
+}
+
+.accessories-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 28px 16px;
+}
+
+.accessory-card {
+min-width: 0;
+}
+
+.accessory-image {
+height: 460px;
+position: relative;
+overflow: hidden;
+background-size: cover;
+background-position: center;
+}
+
+.accessory-img-1 {
+background-image:
+url("https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=85");
+}
+
+.accessory-img-2 {
+background-image:
+url("https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85");
+}
+
+.accessory-img-3 {
+background-image:
+url("https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85");
+}
+
+.accessory-img-4 {
+background-image:
+url("https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=900&q=85");
+}
+
+.accessory-img-5 {
+background-image:
+url("https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=900&q=85");
+}
+
+.accessory-img-6 {
+background-image:
+url("https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=85");
+}
+
+.accessory-img-7 {
+background-image:
+url("https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85");
+}
+
+.accessory-img-8 {
+background-image:
+url("https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=900&q=85");
+}
+
+.accessory-image::after {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0,0,0,.03);
+transition: .4s ease;
+}
+
+.accessory-card:hover .accessory-image::after {
+background: rgba(0,0,0,.1);
+}
+
+.accessory-badge {
+position: absolute;
+z-index: 2;
+top: 16px;
+left: 16px;
+background: #fff;
+color: #111;
+padding: 8px 11px;
+font-size: 9px;
+letter-spacing: 1px;
+font-weight: 700;
+}
+
+.accessory-quick-view {
+position: absolute;
+z-index: 3;
+left: 18px;
+right: 18px;
+bottom: 18px;
+padding: 14px;
+border: 0;
+background: #fff;
+color: #111;
+font-size: 11px;
+font-weight: 600;
+cursor: pointer;
+
+opacity: 0;
+transform: translateY(15px);
+transition: .35s ease;
+}
+
+.accessory-card:hover .accessory-quick-view {
+opacity: 1;
+transform: translateY(0);
+}
+
+.accessory-details {
+display: flex;
+justify-content: space-between;
+gap: 15px;
+padding: 17px 2px;
+}
+
+.accessory-details h3 {
+margin: 0 0 6px;
+font-size: 14px;
+font-weight: 500;
+}
+
+.accessory-details p {
+margin: 0;
+color: #999;
+font-size: 11px;
+}
+
+.accessory-details strong {
+font-size: 13px;
+font-weight: 600;
+}
+
+/* ================= STATEMENT ================= */
+
+.accessories-statement {
+min-height: 650px;
+display: flex;
+align-items: center;
+padding: 100px 10%;
+
+background:
+linear-gradient(90deg, rgba(0,0,0,.84), rgba(0,0,0,.25)),
+url("https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?auto=format&fit=crop&w=2000&q=85")
+center/cover no-repeat;
+
+color: #fff;
+}
+
+.accessories-statement-content {
+max-width: 760px;
+}
+
+.accessories-statement .accessories-eyebrow {
+color: #aaa;
+}
+
+.accessories-statement h2 {
+margin: 0 0 35px;
+font-size: clamp(50px, 7vw, 90px);
+line-height: .95;
+letter-spacing: -4px;
+font-weight: 500;
+}
+
+.accessories-statement h2 em {
+font-weight: 300;
+}
+
+.accessories-statement p {
+max-width: 480px;
+color: #ccc;
+line-height: 1.9;
+margin-bottom: 35px;
+}
+
+.accessories-link {
+color: #fff;
+text-decoration: none;
+font-size: 12px;
+border-bottom: 1px solid #fff;
+padding-bottom: 7px;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes accessoriesFadeUp {
+
+from {
+opacity: 0;
+transform: translateY(35px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+.accessories-categories {
+grid-template-columns: 1fr;
+}
+
+.accessory-category {
+height: 500px;
+}
+
+.accessories-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 650px) {
+
+.accessories-hero {
+min-height: 600px;
+padding: 60px 25px;
+}
+
+.accessories-hero h1 {
+letter-spacing: -3px;
+}
+
+.accessories-intro {
+padding: 90px 25px;
+}
+
+.accessories-products {
+padding: 90px 20px;
+}
+
+.accessories-heading {
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+}
+
+.accessories-heading h2 {
+font-size: 36px;
+}
+
+.accessories-grid {
+grid-template-columns: 1fr 1fr;
+gap: 25px 10px;
+}
+
+.accessory-image {
+height: 330px;
+}
+
+.accessory-quick-view {
+display: none;
+}
+
+.accessories-statement {
+min-height: 560px;
+padding: 80px 25px;
+}
+
+.accessories-statement h2 {
+letter-spacing: -2px;
+}
+
+}
